@@ -1,4 +1,7 @@
-package sample;
+package SportsHub;
 
 public class SportsHubController {
+
+
+
 }

@@ -1,4 +1,4 @@
-package sample;
+package SportsHub;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,13 +11,9 @@ public class SportsHub extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sportsHubInterface.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Sports Hub : Social Network");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
 
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
