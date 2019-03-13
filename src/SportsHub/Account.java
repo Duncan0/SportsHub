@@ -1,10 +1,15 @@
 package SportsHub;
 
+import java.util.ArrayList;
+
 public class Account {
 
     private String accountUsername;
     private String accountNumber;
     private String accountPassword;
+    private ArrayList<Account> accounts;
+
+    
 
     public String getAccountUsername() {
         return accountUsername;
