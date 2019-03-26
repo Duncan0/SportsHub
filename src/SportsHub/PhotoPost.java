@@ -44,11 +44,7 @@ public class PhotoPost extends Post implements UploadedContentPost {
 
     public void display () {
 
-        System.out.println (this.getAuthor ());
-        System.out.println("  [" + this.getFilename () + "]");
-        System.out.println("  " + this.getCaption ());
 
-        super.displayLikesAndComments ();
 
     }
 

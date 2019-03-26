@@ -56,19 +56,6 @@ public abstract class Post {
 
     public void displayLikesAndComments () {
 
-        if (this.likes > 0) {
-            System.out.println (" - " + this.likes + " people like this.");
-        }
-        else {
-            System.out.println ();
-        }
-
-        if (comments.isEmpty ()) {
-            System.out.println ("No comments.");
-        }
-        else {
-            System.out.println ("   " + this.comments.size () + " comment(s). Click to view.");
-        }
     }
 
 }
