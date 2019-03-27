@@ -11,7 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import java.net.URL?>
 <AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SportsHub.WallPosts">
+   <stylesheets>
+      <URL value="@flatterfx.css" />
+   </stylesheets>
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="607.0">
          <children>
