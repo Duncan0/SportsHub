@@ -1,6 +1,5 @@
 package SportsHub;
 
-import java.util.ArrayList;
 
 public class Account {
 
@@ -21,8 +20,6 @@ public class Account {
     }
 
     private String accountEmailAddress;
-
-
 
 
     public String getAccountUsername() {

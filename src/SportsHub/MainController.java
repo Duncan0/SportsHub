@@ -14,7 +14,10 @@ import java.io.*;
 import java.util.ArrayList;
 import static SportsHub.Main.accounts;
 
+
 public class MainController {
+
+    public boolean executed=false;
 
     public Button loginButton, createAccountButton;
     public TextField usernameTF, passwordTF, newUsernameTF, newPasswordTF, newFirstNameTF, newLastNameTF, newPasswordTF1, newEmailTF;
@@ -42,11 +45,11 @@ public class MainController {
                     Parent editScreeningsRoot = FXMLLoader.load(getClass().getResource("wallPosts.fxml"));
                     mainWindow.getScene().setRoot(editScreeningsRoot);
                     break;
-                }
-                else {
-                    Alert alert = new Alert(Alert.AlertType.WARNING, "Incorrect Username & Password");
-                    alert.showAndWait();
-                    break;
+
+                } else {
+                    executed = false;
+                    Alert alert = new Alert(Alert.AlertType.WARNING, "Incorrect Username & Password", ButtonType.OK);
+                    alert.show();
 
                 }
             }
@@ -105,8 +108,7 @@ public class MainController {
 
     @FXML
     private void accountsLoad() {
-        String CsvFile = "accountList.csv";
-
+        String CsvFile = "src/SportsHub/csv/accountList.csv";
 
         BufferedReader br;
 
@@ -139,7 +141,7 @@ public class MainController {
         String lastName = metadata[3];
         String email = metadata[4];
 
-        // create and return book of this metadata
+        // create and return account of this metadata
         return new Account(username, password, firstName, lastName, email);
     }
 }
