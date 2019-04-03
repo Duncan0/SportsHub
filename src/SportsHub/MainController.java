@@ -82,7 +82,7 @@ public class MainController {
 
             Writer writer = null;
             try {
-                File file = new File("accountList.csv.");
+                File file = new File("src/SportsHub/csv/accountList.csv");
                 writer = new BufferedWriter(new FileWriter(file));
                 for (Account account : accounts) {
 
