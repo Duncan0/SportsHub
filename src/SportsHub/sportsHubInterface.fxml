@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 
 <SplitPane dividerPositions="0.5" prefHeight="320.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SportsHub.MainController">
-    <stylesheets>
-        <URL value="@flatterfx.css" />
-    </stylesheets>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-        <Pane layoutX="-2.0" prefHeight="320.0" prefWidth="200.0" stylesheets="@flatterfx.css">
-            <Label layoutX="85.0" layoutY="23.0" text="Login" />
-            <TextField fx:id="usernameTF" layoutX="25.0" layoutY="95.0" promptText="Username" />
-            <PasswordField fx:id="passwordTF" layoutX="25.0" layoutY="144.0" promptText="Password" />
-            <Button fx:id="loginButton" layoutX="25.0" layoutY="188.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="25.0" prefWidth="63.0" text="Login" />
-        </Pane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #222B31;">
+         <Label layoutX="83.0" layoutY="23.0" text="Login" textFill="WHITE" />
+         <TextField fx:id="usernameTF" layoutX="23.0" layoutY="95.0" promptText="Username" />
+         <PasswordField fx:id="passwordTF" layoutX="23.0" layoutY="144.0" promptText="Password" />
+         <Button fx:id="loginButton" layoutX="23.0" layoutY="188.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #FF424F;" text="Login" />
     </AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="200.0">
-        <Label layoutX="77.0" layoutY="20.0" text="Sign Up" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="200.0" style="-fx-background-color: #222B31;">
+        <Label layoutX="77.0" layoutY="20.0" text="Sign Up" textFill="WHITE" />
         <TextField fx:id="newFirstNameTF" layoutX="24.0" layoutY="56.0" promptText="First Name" />
         <TextField fx:id="newLastNameTF" layoutX="24.0" layoutY="90.0" promptText="Last Name" />
         <TextField fx:id="newEmailTF" layoutX="24.0" layoutY="124.0" promptText="Email Address" />
         <TextField fx:id="newUsernameTF" layoutX="24.0" layoutY="159.0" promptText="Username" />
-        <Button fx:id="createAccountButton" layoutX="22.0" layoutY="270.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="25.0" prefWidth="111.0" text="Create Account" />
+        <Button fx:id="createAccountButton" layoutX="22.0" layoutY="270.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #FF424F;" text="Create Account" />
         <PasswordField fx:id="newPasswordTF" layoutX="24.0" layoutY="195.0" promptText="Password" />
         <PasswordField fx:id="newPasswordTF1" layoutX="24.0" layoutY="228.0" promptText="Confirm Password" />
     </AnchorPane>

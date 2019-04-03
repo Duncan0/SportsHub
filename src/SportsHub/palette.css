@@ -1,0 +1,29 @@
+
+.primary-text-colour    { color: #EAEAEB; }
+.secondary-text-colour  { color: #637D8D; }
+.accent-colour          { background: #FF424F; }
+.background-colour      { color: #222B31; }
+.background-colour2     { color: #191C1F; }
+.divider-colour         { border-color: #BDBDBD; }
+.accent-darker          { color: #b22e37 }
+
+.button {
+    -fx-background-color: #FF424F;
+    -fx-text-fill: #EAEAEB;
+}
+.button:hover{
+    -fx-background-color:  #b22e37;
+}
+
+.main-background {
+    -fx-background-color: #222B31;
+}
+
+.menu-bar {
+    -fx-background-color: #191C1F;
+    -fx-min-width: 100%;
+}
+
+.text{
+    -fx-text-fill: #EAEAEB;
+}
